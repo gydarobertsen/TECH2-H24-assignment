@@ -1,0 +1,12 @@
+
+To conclude the assignment that I was given concerning creating a program with Python in Spyder to compute the standard deviation of a list of numbers, using three different approaches. 
+
+Furthermore, I was assigned the task of designing a code in Jupyter Notebook to verify which approach was the quickest, and whether or not this varies with the length of the list. 
+
+The findings clearly state that when iterating over 100 values, the quickest method would be to use for-loops, taking only 5.49 microseconds. However this method suggests that using for-loops for 100 values gives a rather large range of time needed. It varies with as much as 89.6 nanoseconds. Taking this into regard, the method of using built-in functions such as len() and sum() has the lowest variance of time for 100 values, with a deviation of only 14.9 nanoseconds. 
+
+Moreover, when computing with 1000 values in a list, it is clearly more time efficient to utilise the function np.std() from Python's library NumPy to calculate the standard deviation. The program states that for 1000 values, NumPy's function uses 30.7 microseconds for computations, although it, again, has a a larger variance of time that for example using for-loops, which has a computation-time of 52.6 microseconds, but only has 63.2 nanoseconds of variance. 
+
+Finally, for computations with lists of 10,000 values the program clearly shows that NumPy's function is the most efficient, utilising only 232 microseconds. However, this method is once again the most variating, with as much as 392 nanoseconds of variance. In my opinion, it is important to state the for this instance, it is particularly more efficient. For 10, 000 values, the method of for-loops utilises 528 microseconds, with 1.57 micro(!)seconds of uncertainty, and the built-in function uses 994 microseconds with as much as 85.6 nanoseconds of uncertainty. 
+
+In conclusion, it is more efficient to use for-loops for computing the standard deviation using Python for shorter lists. On the other hand, the longer the lists get, the more time efficient it will get to use NumPy's respective function to calculate the standard deviation. Although this function to some extent has more uncertainty. Lastly, I will comment that the variance in time in general is negligible, because of the proportion of unit of measurement. Given that a nanosecond is no more than one thousandth of a microsecond, it is less significant. 
